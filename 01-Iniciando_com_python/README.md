@@ -504,6 +504,110 @@ Desta forma terão os resultados do arquivo que acabaram de desenvolver as lógi
 
 ## <a name="parte8">Trabalhando com For</a>
 
+Falaremos sobre o famoso for. A primeira estrutura de repetição com python. O For é muito utilizado durante o processo de desenvolvimento e ajuda a controlar o fluxo da aplicação.
+
+Criaremos um novo arquivo, chamado for.py, somente para não misturar os conteúdos.
+
+#### Estrutura for
+
+```python
+lista = [2, 4, 6, 8, 10]
+
+for item in lista:
+    print(item)
+```
+
+Observem que, primeiro declaramos uma lista e depois percorremos todos os elementos dela, utilizando o loop for. Temos que utilizar a palavra reservada for, depois uma variável, com o nome que quisermos, em seguida outra palavra reservada ine, por último, a lista que queremos percorrer. Podemos, também, passar apenas um fragmento da lista para o for iterar, caso não queiram percorrer a lista completa.
+
+Vejam exemplo abaixo:
+
+
+```python
+lista = [2,4,6,8,10]
+
+for item in lista[1:4]:
+    print(item)
+```
+
+Desta forma, estamos utilizando o slice, para limitar a iteração. Isso pode ser muito útil em caso de grandes sistemas.
+
+Podemos associar uma condição para imprimir, apenas, os números que forem maiores do que 2. Vejam exemplo abaixo.
+
+```python
+lista = [2,4,6,8,10]
+
+for item in lista:
+    if item > 2:
+        print(item)
+```
+
+Vamos conferir os resultados: python for.py
+
+#### Iterando lista de strings com condicionais
+
+Nos exemplos, anteriores, mostramos o loop for apenas com listas numéricas, mas o for é capaz de percorrer qualquer tipo de lista, com qualquer tipo de dados. Vejam, abaixo, um exemplo com uma lista de strings, associada a uma estrutura condicional.
+
+```python
+nomes = ["Wesley" , "Silva"]
+
+for nome in nomes:
+    if nome == "Wesley":
+        print(nome)
+```
+
+A condição verifica se o nome é igual a Wesley, caso seja, ele imprime, do contrário ele não faz nada. Deste modo teremos apenas a impressão de Wesley no terminal. Executem o arquivo para terem certeza do resultado.
+
+Podemos fazer o inverso e pegar o que não for igual a Wesley, por exemplo. Basta adicionarmos not, antes da comparação. Vejam o exemplo abaixo:
+
+```python
+nomes = ["Wesley" , "Silva" , "Thiago" , "Luis"]
+
+for nome in nomes:
+    if not nome == "Wesley":
+        print(nome)
+```
+Aumentamos o número de nomes na lista, para conseguirem ver o teste lógico funcionando, corretamente.
+
+#### Operador de comparação (==)
+
+Ainda não tínhamos falado do operador de comparação ==. Este operador é capaz de comparar se uma string é igual a outra string ou um número igual a um outro número. Notem a diferença entre, 1 sinal de igual (=) e 2 sinais de igual (==).
+
+
+
+= Atribuir um valor a alguma variável
+
+== Comparar dois valores
+
+#### Conclusão
+
+É desta forma, bem simples, que trabalhamos com loops no python. Adicionamos, junto com os loops, as condicionais, que já havíamos ensinado.
+
+Assim,, vocês observam como os assuntos se cruzam e como os conceitos são aplicados em projetos reais.
+
+Não deixem de praticar muito, para que o conteúdo seja sempre muito bem fixado.
+
+- 01-Iniciando_com_python\for.py
+
+```python
+list = [1,2,3,4,5,6,7,8]
+
+for item in list[2:5]:
+    if item > 2:
+        print(item)
+        #print("Maior que 2")
+
+list2 = ["Jose", "Malcher"]
+for name in list2:
+    if not name == "Jose":
+        print(name)
+```
+
+```
+3
+4
+5
+Malcher
+```
 
 [Voltar ao Índice](#indice)
 
