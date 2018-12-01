@@ -790,6 +790,77 @@ No próximo módulo mostraremos como é possível trabalhar melhor com os parâm
 
 ## <a name="parte11">Parametros nomeados e return</a>
 
+Manteremos os exemplos anteriores e entenderemos melhor, o funcionamento das funções. Trabalharemos com parâmetros nomeados, o que é um super diferencial do python.
+
+Na maioria das linguagens de programação, quando chamamos uma função, passamos o parâmetro, diretamente, como foi feito no último exemplo, do módulo anterior.
+
+Vejam um exemplo de uma função com mais de um parâmetro:
+
+```python
+def call_numbers_with_limit(limit , limit2 , limit3):
+    for number in range(0,limit):
+        print(number)
+
+call_numbers_with_limit(50 , 1 , 10)
+```
+
+Observem que, temos 3 parâmetros declarados na função acima. Na chamada, também, passamos os 3 parâmetros que a função exige. Como são poucos parâmetros, é possível controlarmos e sabermos que estão na ordem correta.
+
+Suponham uma função com muitos parâmetros e onde, talvez, nós não saibamos qual a ordem deles. Para não corrermos o risco de confundirmos e errarmos, o python disponibiliza este recurso maravilhoso de parâmetros nomeados.
+
+#### Criando exemplo calculadora para parâmetros nomeados
+
+```python
+def calculator(x,y):
+    print(x-y)
+
+calculator(10,5)
+```
+
+Nós sabemos que, na matemática, dependendo a operação, a ordem dos fatores podem alterar o resultado. No exemplo, acima, se fizermos 10 - 5 teremos o resultado igual a 5, mas se fizermos o contrário, teremos -5, como resultado.
+
+Para evitar erros de ordens, o python oferece a possibilidade de nomear os parâmetros, na hora de chamar a função. Vejam o exemplo abaixo:
+
+```python
+def calculator(x,y):
+    print(x-y)
+
+calculator(y=5,x=10)
+```
+
+Colocamos o nome do parâmetro e igualamos ao valor que queremos informar. Desta forma, podemos colocar em qualquer ordem, que o python saberá tratar e executar a função, corretamente. Isso é maravilhoso e muito prático, quando estamos falando de funções que possuem muitos parâmetros.
+
+#### Informando valores padrões para parâmetros
+
+Existe, também, a possibilidade de informarmos valores padrões, para as variáveis. Significa que, se o usuário não informar valor nenhum, a função pegará um valor pré-determinado, na declaração da função. Vejam o exemplo:
+
+```python
+def calculator(x=10,y=5):
+    print(x-y)
+
+# Resultado com valores padrões = 5
+calculator();
+
+# Passando valor apenas para x | Resultado = 15
+calculator(20);
+
+# Passando valor apenas para y | Resultado = 0
+calculator(y=10);
+```
+
+#### Utilizando return nas funções
+
+Por enquanto, nossos exemplos de funções, apenas, imprimiram algo. Nós podemos querer que uma função, apenas, atribua um valor a uma variável, por exemplo. Neste caso, podemos utilizar o return, que interrompe a função e retorna o valor que nós definirmos. Vejam exemplo:
+
+```python
+def calculator(x=10,y=5):
+    return x-y
+
+result = calculator(20,10)
+print("Result is ",result)
+```
+
+Em vez de imprimir, nós retornamos o valor da função, atribuindo à variável result. Desta forma, podemos utilizar a variável result onde quisermos, sabendo que ela contém o resultado de nossa função. Assim, demos um print de uma string, seguida do resultado. Para isso, separamos string e resultado por vírgula, para que a função print não retorne um erro.
 
 [Voltar ao Índice](#indice)
 
