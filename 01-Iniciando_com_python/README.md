@@ -615,6 +615,112 @@ Malcher
 
 ## <a name="parte9">Trabalhando com While</a>
 
+Falaremos sobre a segunda forma de trabalhar com loops, no python.
+
+Da mesma forma que trabalhamos com o for, temos outro tipo de laço de repetição chamado while.
+
+O while é o famoso enquanto. Usando uma explicação mais simples, podemos dizer que: enquanto uma condição estiver sendo verdadeira, ele irá executar uma determinada ação.
+
+Criaremos um novo arquivo chamado while.py.
+
+#### Estrutura while
+
+```python
+number = 5
+
+while number < 10:
+    print(number)
+    number += 1
+```
+
+O primeiro passo, para trabalhar com while, é atribuir um valor a uma variável. Esta variável será o nosso contador, durante o laço de repetição. Em nosso exemplo criamos a variável number, que tem um valor inicial de 5.
+
+Em seguida, criamos o laço de repetição que começa testando se number é menor do que 10. Como este teste é verdadeiro ele executa o print, que vem logo abaixo, e soma 1 à nossa variável number. Nós chamamos este ato de incremento.
+
+Incrementada a variável, voltamos ao início do while, que é o teste, e vamos testar novamente. Notem que o number não é mais 5, agora ele vale 6, porque foi incrementado na iteração anterior. Como 6 ainda é menor do que 10 ele executa, novamente, e assim, sucessivamente, até que o number seja igual a 10. Sendo igual a 10, a condição do while não será mais verdadeira e a repetição terá um fim.
+
+Rodem o arquivo no terminal, para verem o resultado.
+
+#### Parando while com break
+
+```python
+while number < 10:
+    print(number)
+    number += 1
+    if number == 8:
+        print("Break!!!")
+        break
+```
+
+Neste caso, a estrutura trabalha da mesma forma que a anterior, porém, estamos fazendo um teste condicional, dentro do loop while.
+
+Isso significa que, quando o number for igual a 8, nós iremos imprimir Break!!! e aplicaremos o comando break, que irá interromper o loop, imediatamente.
+
+Desta forma, podemos parar o loop, antes que ele chegue ao seu final.
+
+#### While com condicional else
+
+Este é um recurso muito interessante que podemos utilizar no python. Enquanto uma repetição é executada no while, é porque a condição está sendo verdadeira, mas quando chega ao fim, temos uma resposta negativa. Nós podemos utilizar o else por este motivo. Assim que a condição for falsa, em vez de acabar a iteração e não fazermos nada, podemos rodar algum comando dentro do else. Vejam o exemplo abaixo:
+
+```python
+while number < 10:
+    print(number)
+    number += 1
+    #if number == 8:
+    #    print("Break!!!")
+    #    break
+else:
+    print("not true anymore")
+```
+
+Nós comentamos o código anterior, onde existia o break, porque se o break fosse executado, a condição ainda seria true e o else não teria efeito.
+
+#### Como comentar linhas no python
+
+Comentamos, utilizando hashtag (#) na frente de cada linha. Existe outra forma de comentar pedaços de código que é utilizando (''' '''). O código que quiserem comentar deverá estar entre esta sintaxe. O # é utilizado para comentar apenas uma linha, enquanto a outra, comenta um conjunto de linhas. Vejam exemplos de comentários.
+
+```python
+#if number == 8:
+ #    print("Break!!!")
+ #    break
+
+ '''
+ if number == 8:
+     print("Break!!!")
+     break
+ '''
+```
+
+Façam todos estes testes e criem mais alguns. Nunca fiquem apenas nos exemplos que passamos. Lembrem-se que isso será muito bom para vocês e seus estudos.
+
+
+```python
+number = 2
+
+while number < 10:
+    print(number)
+    number += 1
+    '''
+    if number == 8:
+        print("Break!!!")
+        break
+    '''
+else:
+    print("not true anymore")
+
+```
+
+```
+2
+3
+4
+5
+6
+7
+8
+9
+not true anymore
+```
 
 [Voltar ao Índice](#indice)
 
