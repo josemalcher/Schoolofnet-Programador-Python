@@ -1039,6 +1039,27 @@ Falamos que esta é a forma correta de se iterar um dicionário, porque estamos 
 
 ## <a name="parte14">Concluindo</a>
 
+Chegamos ao final do conteúdo Iniciando com Python. Com o que vocês aprenderam, neste curso, é possível fazerem uma infinidade de coisas e, o mais importante, já é possível trabalharem com python, em aplicações mais simples.
+
+Conseguem, também, interpretar muitos códigos de python, que estão espalhados por aí, porque já conhecem a estrutura das principais funcionalidades da linguagem.
+
+O nosso objetivo foi alcançado, passando os conceitos básicos de Python e fazendo com que o Python não pareça mais uma linguagem estranha ou difícil de se aprender.
+
+Este foi o conteúdo introdutório de Python, esperamos que vocês tenham gostado.
+
+O próximo passo, se gostaram da linguagem, será procurar o nosso conteúdo de Python Orientado a Objetos, onde ensinamos conteúdos mais avançados e exigiremos estes conhecimentos básicos, como pré-requisito.
+
+Neste conteúdo de Python Orientado a Objetos, falamos como trabalhar com módulos, pacotes, classes, atributos, métodos, cálculos, heranças de classes e muitos outros pontos importantes. Separamos os conteúdos para não ficar muito pesado e com muitas informações, podendo gerar confusões.
+
+Vocês já têm o básico de Python. Recomendamos que treinem bastante, refaçam os exemplos e baixem alguns programas, criados em Python, para analisarem e verificarem o que vocês entenderam.
+
+Vocês perceberam o quão fácil e prático é trabalhar com esta linguagem.
+
+Esperamos que, realmente, tenham gostado e aprendido a linguagem Python.
+
+Até o próximo conteúdo.
+
+++ <https://www.schoolofnet.com/canal-direto-ao-ponto/python-dicionarios-vs-listas-vs-tuplas/>
 
 [Voltar ao Índice](#indice)
 
