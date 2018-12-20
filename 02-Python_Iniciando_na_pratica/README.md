@@ -26,6 +26,9 @@ Neste curso, ensinaremos como usar os conceitos básicos da linguagem Python, ap
 
 ## <a name="parte1">Introdução</a>
 
+- Python v3
+
+- https://www.python.org/
 
 [Voltar ao Índice](#indice)
 
@@ -40,6 +43,19 @@ Neste curso, ensinaremos como usar os conceitos básicos da linguagem Python, ap
 
 ## <a name="parte3">Capturar dados do teclado</a>
 
+```python
+print("")
+print("********************************************************")
+print("******************* Caixa Eletrônico *******************")
+print("********************************************************")
+print("")
+
+accont_typed = input("Digite sua conta:  ")
+password_typed = input("Digite sua Senha:  ")
+print(accont_typed)
+print(password_typed)
+
+```
 
 [Voltar ao Índice](#indice)
 
