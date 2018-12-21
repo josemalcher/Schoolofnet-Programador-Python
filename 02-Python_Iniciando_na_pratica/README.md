@@ -63,6 +63,14 @@ print(password_typed)
 
 ## <a name="parte4">Capturar dados de forma segura no teclado</a>
 
+```python
+import getpass
+
+password_typed = getpass.getpass("Digite sua Senha:  ")
+
+print(password_typed)
+
+```
 
 [Voltar ao Índice](#indice)
 
