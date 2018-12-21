@@ -1,4 +1,5 @@
 import getpass
+import os
 
 while True:
     print("")
@@ -24,6 +25,10 @@ while True:
     }
 
     if accont_typed in acconts_list and password_typed == acconts_list[accont_typed]['password']:
+        if os.name == 'nt':
+            os.system('cls')
+        else:
+            os.system('clear')
         print("")
         print("********************************************************")
         print("*******************    Bem Vindo    *******************")
@@ -37,3 +42,10 @@ while True:
 
     else:
         print("---- CONTA INVALIDA ---")
+
+    input('Pressione <ENTER> para continuar...') #pause do prgrama
+
+    if os.name == 'nt':
+        os.system('cls')
+    else:
+        os.system('clear')
