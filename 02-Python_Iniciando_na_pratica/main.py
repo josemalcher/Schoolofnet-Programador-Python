@@ -25,10 +25,11 @@ while True:
     }
 
     if accont_typed in acconts_list and password_typed == acconts_list[accont_typed]['password']:
-        if os.name == 'nt':
-            os.system('cls')
-        else:
-            os.system('clear')
+        # if os.name == 'nt':
+        #     os.system('cls')
+        # else:
+        #     os.system('clear')
+        os.system('cls' if os.name == 'nt' else 'clear')
         print("")
         print("********************************************************")
         print("*******************    Bem Vindo    *******************")
@@ -45,7 +46,8 @@ while True:
 
     input('Pressione <ENTER> para continuar...') #pause do prgrama
 
-    if os.name == 'nt':
-        os.system('cls')
-    else:
-        os.system('clear')
+    # if os.name == 'nt':
+    #     os.system('cls')
+    # else:
+    #     os.system('clear')
+    os.system('cls' if os.name == 'nt' else 'clear')

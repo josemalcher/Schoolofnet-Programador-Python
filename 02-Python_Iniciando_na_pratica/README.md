@@ -294,6 +294,13 @@ while True:
 
 ## <a name="parte10">Operação ternária</a>
 
+```python
+    # if os.name == 'nt':
+    #     os.system('cls')
+    # else:
+    #     os.system('clear')
+    os.system('cls' if os.name == 'nt' else 'clear')
+```
 
 [Voltar ao Índice](#indice)
 
